@@ -1,11 +1,11 @@
 employeeWebApp
-BluePrint -  Code Test
+#BluePrint -  Code Test
 
-* Date Created: 01 June 2021
+#Date Created: 01 June 2021
 
-Author - Swarali Ghalwadkar
+#Author - Swarali Ghalwadkar
 
-Getting started (Project Description)
+#Getting started (Project Description)
 
 This responsive webApp allows the user to add,delete,edit and update employee details.In this project, I have created my own json file and added the data in json format that was given in the document.I wrote function using observables and the 
 http functions like get post delete etc. in the employee.service file. I called that service in the employee.ts file. I wrote functions in the ts file that 
@@ -30,10 +30,12 @@ existing data in the db.json file.
 11.Scroll functionality has been added to  view the list of employees
 12.Template driven form approach has been used
 
-#Github URL 
 
+#URLS
+Github url :- https://github.com/swaralisg/employeeWebApp.git
+Json server - http://localhost:3000/employees
 
-My project files are :-
+#My project files are :-
 
 1.app.component.ts
 2.app.module.ts
@@ -55,7 +57,7 @@ My project files are :-
 
 
 
-# Acknowledgement
+#Acknowledgement
 
 I had immense pleasure while doing this code test.I am glad to have overcome certain challenges I faced while working on this test as well for having completed
 all the requirements that were mentioned. Thank you so much for this opportunity. I look forward to hear from you.
