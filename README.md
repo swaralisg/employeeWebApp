@@ -1,11 +1,11 @@
-# employeeWebApp
-# BluePrint -  Code Test
+employeeWebApp
+BluePrint -  Code Test
 
 * Date Created: 01 June 2021
 
-# Author - Swarali Ghalwadkar
+Author - Swarali Ghalwadkar
 
-# Getting started (Project Description)
+Getting started (Project Description)
 
 This responsive webApp allows the user to add,delete,edit and update employee details.In this project, I have created my own json file and added the data in json format that was given in the document.I wrote function using observables and the 
 http functions like get post delete etc. in the employee.service file. I called that service in the employee.ts file. I wrote functions in the ts file that 
