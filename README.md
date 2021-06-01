@@ -35,6 +35,14 @@ existing data in the db.json file.
 Github url :- https://github.com/swaralisg/employeeWebApp.git
 Json server - http://localhost:3000/employees
 
+Upon entering the employeefrontend folder, run it using the folowing command:-
+ng serve-o  
+For the employeeserver folder - upon entering the folder using cmd, run the following 2 commands:-
+1)npm install -g json-server    
+description: To intsall  the json server easily 
+2)json-server --watch db.json
+description: To run the db.json file
+
 #My project files are :-
 
 1.app.component.ts
