@@ -1,0 +1,46 @@
+{
+  "employees": [
+    {
+      "fullname": "John Doe",
+      "address": "Address1",
+      "phonenumber": "4625162736",
+      "position": "Project Manager",
+      "id": 10
+    },
+    {
+      "fullname": "Roger Flynn",
+      "address": "Address 2",
+      "phonenumber": "4625122736",
+      "position": "Production Manager",
+      "id": 11
+    },
+    {
+      "fullname": "Alex Visaramy",
+      "address": "Address 3",
+      "phonenumber": "3221522736",
+      "position": "General Manager",
+      "id": 12
+    },
+    {
+      "fullname": "Kyle Pitt",
+      "address": "Address 4",
+      "phonenumber": "3243122736",
+      "position": "HR Director",
+      "id": 13
+    },
+    {
+      "fullname": "Elizabeth James",
+      "address": "Address 5",
+      "phonenumber": "3233122736",
+      "position": "Senior Editor",
+      "id": 14
+    },
+    {
+      "fullname": "Martin Ziberman",
+      "address": "Address 7",
+      "phonenumber": "3333122736",
+      "position": "Editor",
+      "id": 16
+    }
+  ]
+}

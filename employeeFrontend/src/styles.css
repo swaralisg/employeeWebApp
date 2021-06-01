@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/materialize/css/materialize.min.css";
+
+
+body,html{
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+
+}

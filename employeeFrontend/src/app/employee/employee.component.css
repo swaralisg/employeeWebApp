@@ -1,0 +1,179 @@
+/* Style document  */
+
+/* CSS For cards and controls */
+#dropdown {
+  height: 30px;
+  width: inherit;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px solid #cac9c9;
+  font-size: 12px;
+}
+
+label {
+  font-size: 13px;
+  color: black;
+  font-weight: 600;
+}
+
+#inputBox {
+  height: 30px;
+  border: 1px solid #cac9c9;
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+}
+
+#mini-card {
+  background-image: linear-gradient(
+    to right,
+    rgb(236, 229, 243),
+    rgb(229, 218, 240),
+    rgb(211, 189, 231),
+    rgb(209, 181, 236),
+    rgb(194, 147, 238)
+  );
+  border-radius: 13px 0px 13px 0px;
+  padding: 5px;
+  padding-left: 5px;
+  border: none;
+}
+
+#first-column {
+  border: 1px solid rgb(194, 194, 194);
+  max-height: 455px;
+  overflow-y: auto;
+  margin-top: 5px;
+}
+
+#second-column {
+  background-color: white;
+
+  border: 16px solid rgb(245, 242, 242);
+  margin-top: 5px;
+  padding-top: 31px;
+  padding-left: 55px;
+}
+
+#main-card {
+  background-color: #fffdfa;
+
+  padding: 27px;
+  border: 1px solid lemonchiffon;
+}
+
+.fill-form {
+  margin-top: 35px;
+}
+
+
+/* CSS for buttons */
+
+#add-button {
+  border-radius: 15px;
+  background: lavender;
+  border: 1px solid cornsilk;
+  font-size: 12px;
+  height: 33px;
+  font-weight: 600;
+}
+
+#save-button {
+  margin-top: 12px;
+  /* height: 30px; */
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid lavender;
+  background-color: rgb(127, 40, 207);
+  font-weight: 500;
+  color: whitesmoke;
+  border-radius: 4px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  /* padding: 6px; */
+  height: 30px;
+}
+
+#edit-button {
+  cursor: pointer;
+}
+
+#delete-button {
+  cursor: pointer;
+}
+
+#delete-button:hover {
+  color: black;
+}
+
+#add-button:hover {
+  color: black;
+  font-weight: 700;
+  -webkit-box-shadow: 2px 2px 2px grey;
+  -moz-box-shadow: 2px 2px 2px grey;
+  box-shadow: 2px 2px 2px grey;
+  border: none;
+  -webkit-transition: margin 0.2s ease-out;
+  -moz-transition: margin 0.2s ease-out;
+  -o-transition: margin 0.2s ease-out;
+  transition: margin 0.2s ease-out;
+}
+
+#update-button {
+  margin-top: 17px;
+
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid rgb(106, 160, 161);
+  background-color: rgb(127, 40, 207);
+  font-weight: 500;
+  color: whitesmoke;
+  border-radius: 4px;
+
+  padding-left: 18px;
+  padding-right: 18px;
+
+  height: 30px;
+}
+
+
+/* CSS for adding adding hover effects */
+
+#save-button:hover {
+  background-color: rgb(89, 32, 143);
+  color: white;
+  font-weight: 700;
+  -webkit-box-shadow: 2px 2px 2px grey;
+  -moz-box-shadow: 2px 2px 2px grey;
+  box-shadow: 2px 2px 2px grey;
+  border: none;
+  -webkit-transition: margin 0.2s ease-out;
+  -moz-transition: margin 0.2s ease-out;
+  -o-transition: margin 0.2s ease-out;
+  transition: margin 0.2s ease-out;
+}
+
+a:hover {
+  font-size: 12px;
+  -webkit-transition: margin 0.2s ease-out;
+  -moz-transition: margin 0.2s ease-out;
+  -o-transition: margin 0.2s ease-out;
+  transition: margin 0.2s ease-out;
+}
+#update-button:hover {
+  background-color: rgb(89, 32, 143);
+  color: white;
+  -webkit-box-shadow: 2px 2px 2px purple;
+  -moz-box-shadow: 2px 2px 2px purple;
+  box-shadow: 2px 2px 2px purple;
+  border: none;
+  -webkit-transition: margin 0.2s ease-out;
+  -moz-transition: margin 0.2s ease-out;
+  -o-transition: margin 0.2s ease-out;
+  transition: margin 0.2s ease-out;
+}
+
+i:hover {
+  color: white !important;
+}

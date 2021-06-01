@@ -1,0 +1,134 @@
+
+
+  <form style="margin-top: 5px;" #myForm="ngForm">
+  <div style="height: 100%; width: 100%;" class="employee-page">
+      <div id="container-main" class="container">
+        <div  id="main-card"  class="card">
+
+        <!-- Section containing the employees title and the add button -->
+        <div class="row">
+        <div class="col-lg-2 col-md-6">
+        <h4>Employees</h4>
+        </div>
+        <div style="text-align: center;" class="col-lg-8 col-md-2">
+         <label *ngIf="isFillInfoStatement" style="text-align: center; color: rgb(61, 139, 61);">Please fill the employee details mentioned below.</label>
+        </div>
+        <div style="text-align: right;" class="col-lg-2 col-md-4">
+            <button (click)="clearFields()" id="add-button">+ Add New</button>
+        </div>
+        </div>
+
+         <!-- Section containing the the employee record display column -->
+        <div class="row jusify-content-center">
+        <div id="first-column" class="col-lg-5 col-md-6 col-sm-12 col-xs-12 jusify-content-center">
+
+            <div id="mini-card"  *ngFor="let employee of allEmployees"  class="card">
+            <div style="margin-top: 17px;" class="row">
+                <div style="text-align: center;"class="col-8">  
+                    <h5>{{employee.fullname}}</h5>
+                    <h6>{{employee.position}}</h6> 
+                </div>
+            <div style="text-align: left; padding:12px"class="col-2">
+                 <a   (click)="editEmployee(employee)" id="edit-button"><i class="fa fa-edit" style="font-size:28px; cursor: pointer; color: rgb(107, 106, 106);  font-family: fontawesome"></i></a>
+                 
+            </div>
+            <div style="text-align: left; padding:12px"class="col-2">
+                 <a (click)="deleteEmployee(employee)" id="delete-button"><i class="fa fa-trash-o" style="font-size:28px; cursor: pointer; color: rgb(107, 106, 106);;  font-family: fontawesome"></i></a>
+            </div>
+          
+            </div>
+            </div>
+        </div>
+
+        <!-- Section containing the actual form content -->
+                <div   id="second-column"  class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                        <h5>Personal Information</h5>
+                        </div>
+                    </div>
+                    <div class="fill-form">
+                   
+                    
+    <div  class="form-group" aria-required="true">
+        <div class="row">
+            <div id="label-column" class="col-lg-3 col-md-5 col-sm-6 col-sx-12">
+                <label for="exampleInputEmail1">Full Name</label>
+            </div>
+            <div class="col-lg-8 col-md-7 col-sm-6 col-sx-12">
+                <input required id="inputBox" class="form-control" name="fullname" #fullname="ngModel" [(ngModel)]="userDummyObject.fullname" > 
+
+        </div>
+    </div>
+</div>
+
+    <div class="form-group">
+        <div class="row">
+            <div id="label-column" class="col-lg-3 col-md-5 col-sm-6 col-sx-12">
+                <label for="exampleInputPassword1">Address</label>
+            </div>
+            <div class="col-lg-8 col-md-7 col-sm-6 col-sx-12">
+                <input required id="inputBox"  class="form-control" name="address" [(ngModel)]="userDummyObject.address"> 
+            </div>
+        </div>
+    </div>
+
+ 
+
+    <div class="form-group">
+        <div class="row jusify-content-right">
+            <div id="label-column" class="col-lg-3 col-md-5 col-sm-6 col-sx-12 jusify-content-right">
+                <label for="exampleInputPassword1">Phone Number</label>
+            </div>
+            <div class="col-lg-8 col-md-7 col-sm-6 col-sx-12">
+                <input id="inputBox"  class="form-control" name="phonenumber" [(ngModel)]="userDummyObject.phonenumber" required> 
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+      
+        <div  class="row jusify-content-right">
+            <div id="label-column" class="col-lg-3 col-md-5 col-sm-6 col-sx-12 jusify-content-left">
+              <label>Position</label>
+            </div>
+            <div class="col-lg-8 col-md-7 col-sm-6 col-sx-12">
+                <select required name="position" [(ngModel)]="userDummyObject.position" class="form-control"  id="dropdown">
+                    <option value="0" selected>Please select a position</option>
+                    <option value="Project Manager">Project Manager</option>
+                    <option value="Production Manager">Production Manager</option>
+                    <option value="General Manager">General Manager</option>
+                    <option value="HR Director">HR Director</option>
+                    <option value="Senior Editor">Senior Editor</option>
+                    <option value="Editor">Editor</option>
+                  </select>
+            </div>
+     
+        </div>
+    </div>
+
+   <!-- Section containing the update and save button as well as action statements to notify the user -->
+    <div class="row jusify-content-right">
+        <div style="text-align: right;" class="col">
+        <button type="submit" id="save-button" *ngIf="!isEdit" (click)="addEmployee(myForm.value)" >Save</button>
+        <label style="text-align: left; color: purple;" *ngIf="isSaveButtonClicked">New Employee Record is created ! Click on the 'Add new' button to add a new employee!</label>
+        
+        <button type="button" id="update-button"  *ngIf="isEdit" (click)="updateEmployee()">Update</button>
+        <label style="text-align: left;color: purple" *ngIf="isUpdateButtonClicked">Employee record has been updated! Click on the 'Add new' button to add a new employee!</label>
+    </div>
+</div>
+
+</div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
+  </form>
+
+  <style>
+      .alert{
+          color: red;
+      }
+  </style>
